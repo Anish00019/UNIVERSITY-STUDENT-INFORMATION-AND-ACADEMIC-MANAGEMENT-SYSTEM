@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $confirm           = $_POST['confirm_password'] ?? '';
 
     if (!verify_csrf($_POST['csrf_token'] ?? '')) {
-        $errors['form'] = 'Your session has expired. Please submit the form again.';
+        $errors['form'] = csrf_error_message();
     }
 
     // ---- Server-side validation ----

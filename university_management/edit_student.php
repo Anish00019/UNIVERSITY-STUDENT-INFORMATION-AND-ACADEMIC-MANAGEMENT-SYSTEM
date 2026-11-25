@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = get_student_input();
 
     if (!verify_csrf($_POST['csrf_token'] ?? '')) {
-        $errors['form'] = 'Your session has expired. Please submit the form again.';
+        $errors['form'] = csrf_error_message();
     } else {
         $errors = validate_student($data);
 

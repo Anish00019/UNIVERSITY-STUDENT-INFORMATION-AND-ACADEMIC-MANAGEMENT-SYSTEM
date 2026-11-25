@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = $_POST['password'] ?? '';
 
     if (!verify_csrf($_POST['csrf_token'] ?? '')) {
-        $error = 'Your session has expired. Please try again.';
+        $error = csrf_error_message();
     } elseif ($username === '' || $password === '') {
         $error = 'Please enter both username and password.';
     } else {

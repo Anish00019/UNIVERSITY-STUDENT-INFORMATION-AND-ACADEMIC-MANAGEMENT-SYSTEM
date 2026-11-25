@@ -116,6 +116,20 @@ function verify_csrf($token)
     return is_string($token) && $token !== '' && hash_equals(csrf_token(), $token);
 }
 
+/**
+ * Message to show when the CSRF check fails.
+ * If the browser did not send the session cookie at all, cookies are being
+ * blocked, so the "expired" message would be misleading.
+ */
+function csrf_error_message()
+{
+    if (empty($_COOKIE[session_name()])) {
+        return 'Your browser did not send the session cookie. Please allow cookies for this site '
+             . '(or open it in a normal browser tab) and try again.';
+    }
+    return 'Your session has expired. Please submit the form again.';
+}
+
 /* ---------------------------------------------------------------------
  * 4. Flash messages (shown once on the next page)
  * ------------------------------------------------------------------- */
