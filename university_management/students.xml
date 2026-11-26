@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Student records - automatically synchronised with the MySQL database -->
+<students generated="2026-11-25 10:24:25" total="8">
+  <student id="4">
+    <register_number>BBA24008</register_number>
+    <student_name>Sneha Reddy</student_name>
+    <course>BBA</course>
+    <semester>3</semester>
+    <email>sneha.reddy@student.edu</email>
+  </student>
+  <student id="1">
+    <register_number>BCA23001</register_number>
+    <student_name>Aarav Sharma</student_name>
+    <course>BCA</course>
+    <semester>5</semester>
+    <email>aarav.sharma@student.edu</email>
+  </student>
+  <student id="2">
+    <register_number>BCA23002</register_number>
+    <student_name>Diya Nair</student_name>
+    <course>BCA</course>
+    <semester>5</semester>
+    <email>diya.nair@student.edu</email>
+  </student>
+  <student id="3">
+    <register_number>BCA24015</register_number>
+    <student_name>Rohan Gowda</student_name>
+    <course>BCA</course>
+    <semester>3</semester>
+    <email>rohan.gowda@student.edu</email>
+  </student>
+  <student id="8">
+    <register_number>BCA25030</register_number>
+    <student_name>Priya Hegde</student_name>
+    <course>BCA</course>
+    <semester>1</semester>
+    <email>priya.hegde@student.edu</email>
+  </student>
+  <student id="5">
+    <register_number>BCO25011</register_number>
+    <student_name>Kiran Kumar</student_name>
+    <course>B.Com</course>
+    <semester>1</semester>
+    <email>kiran.kumar@student.edu</email>
+  </student>
+  <student id="6">
+    <register_number>BSC24021</register_number>
+    <student_name>Ananya Iyer</student_name>
+    <course>B.Sc Computer Science</course>
+    <semester>3</semester>
+    <email>ananya.iyer@student.edu</email>
+  </student>
+  <student id="7">
+    <register_number>MCA25004</register_number>
+    <student_name>Mohammed Faizan</student_name>
+    <course>MCA</course>
+    <semester>1</semester>
+    <email>mohammed.faizan@student.edu</email>
+  </student>
+</students>
